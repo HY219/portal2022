@@ -8,14 +8,14 @@ public class UserDao {
         Class.forName("com.mysql.cj.jdbc.Driver");
 
         Connection connection = DriverManager.getConnection(
-                "jdbc:mysql://192.168.151.176:3306/jeju?serverTimezone=UTC",
-                "jeju",
-                "jejupw"
+                "jdbc:mysql://localhost:3306/userdao2?serverTimezone=UTC",
+                "1234",
+                "1234"
         );
 
         PreparedStatement preparedStatement =
                 connection.prepareStatement(
-                        "select * from userinfo where id = ?"
+                        "select * from userdao2 where id = ?"
                 );
         preparedStatement.setInt(1, id);
 
