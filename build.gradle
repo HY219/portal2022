@@ -1,5 +1,5 @@
 plugins {
-    id 'java'x
+    id 'java'
 }
 
 group 'org.example'
