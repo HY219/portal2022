@@ -1,4 +1,4 @@
-package kr.ac.jejunu;
+package kr.ac.jejunu.userdao;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -10,31 +10,37 @@ import java.sql.Driver;
 
 @Configuration
 public class DaoFactory {
-    @Value("${db.drivername}")
-    private String driverClassName; //= "com.mysql.cj.jdbc.Driver";
+    @Value("${db.className}")
+    private String className;
     @Value("${db.url}")
-    private String url; //= "jdbc:mysql://localhost:3306/userdao2?serverTimezone=UTC";
+    private String url;
     @Value("${db.username}")
-    private String username; //= "1234";
+    private String username;
     @Value("${db.password}")
-    private String password; //= "1234";
+    private String password;
 
     @Bean
-    public UserDao userDao() throws ClassNotFoundException {
-
-        return new UserDao(dataSource());
+    public UserDao userDao() {
+        return new UserDao(jdbcContext());
     }
 
     @Bean
-    public DataSource dataSource() throws ClassNotFoundException {
-        SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
+    public JdbcContext jdbcContext(){
+        return new JdbcContext(dataSource());
+    }
 
-        dataSource.setDriverClass(
-                (Class<? extends Driver>) Class.forName(driverClassName));
+
+    @Bean
+    public DataSource dataSource(){
+        SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
+        try {
+            dataSource.setDriverClass((Class<? extends Driver>) Class.forName(className));
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         dataSource.setUrl(url);
         dataSource.setUsername(username);
         dataSource.setPassword(password);
         return dataSource;
     }
-
 }
