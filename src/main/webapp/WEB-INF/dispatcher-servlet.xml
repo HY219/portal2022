@@ -8,7 +8,10 @@
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
        http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
 ">
+    <!--//annotation-driven하나로 모든 annotation을 꽂아준다.-->
+    <annotation-driven />
     <context:component-scan base-package="kr.ac.jejunu.userdao" />
+    <beans:bean name="user3" class="kr.ac.jejunu.userdao.SimpleController"/>
 <!--    <beans:bean name="/user" class="kr.ac.jejunu.userdao.SimpleController" />-->
 <!--    <beans:bean name="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
 <!--        <beans:property name="prefix" value="/WEB-INF/views/"/>-->
@@ -29,4 +32,6 @@
             </beans:bean>
         </beans:property>
     </beans:bean>
+    <resources mapping="/images/**" location="/WEB-INF/static/" /> <!--//images/**하면 location에 지정한 dir로 보내진다. //이것때문에 annotation이 모두 작동하지 않기 때문에, 코드 상단에 annotation-driven을 추가해준다.-->
+
 </beans:beans>

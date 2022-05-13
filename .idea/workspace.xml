@@ -10,21 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cf148b0-407b-4580-b97a-266e243e9574" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/SimpleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao2-1.0-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/userdao/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao2-1.0-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/userdao/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao2-1.0-SNAPSHOT.war/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao2-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/userdao/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/userdao/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-9.0.62/conf/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-9.0.62/conf/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao2-1.0-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/userdao/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao2-1.0-SNAPSHOT.war/WEB-INF/classes/kr/ac/jejunu/userdao/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/userdao2-1.0-SNAPSHOT.war/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/userdao2-1.0-SNAPSHOT.war/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/userdao/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/kr/ac/jejunu/userdao/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/jejunu/userdao/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +77,12 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="jsf" />
+        <option value="spring-beans.schema" />
+        <option value="Tag Library Descriptor" />
+        <option value="Jsp File" />
+        <option value="XHTML File" />
       </list>
     </option>
   </component>
@@ -108,6 +107,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="XHTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -526,7 +526,8 @@
       <workItem from="1650802805081" duration="815000" />
       <workItem from="1651165736979" duration="4679000" />
       <workItem from="1651215596941" duration="6653000" />
-      <workItem from="1651820391290" duration="8111000" />
+      <workItem from="1651820391290" duration="8588000" />
+      <workItem from="1652425735055" duration="9310000" />
     </task>
     <servers />
   </component>
