@@ -30,6 +30,18 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView("user");
         return modelAndView;
     }
+    //0520
+    @GetMapping(value="modelattribute", produces = "application/json")
+    //public void modelAttribute(@ModelAttribute User user) { //파라미터의 역할과, 미터의 역할을 두다 수행한다.->@ModelAttribute가 붙은 것은
+    //@ModelAttribute 생략가능
+    //그냥 object만 있다. -> annotationmodelattribut가 생략이 되었다.
+        public String modelAttribute(User user){
+        user.setName("허윤호"); //바뀐 이름으로만 보인다
+        //return "user"; //view name을 전달할 때 String을 사용(원래 void였음.)
+
+        //return "redirect:/upload";
+        return "forward:/upload";
+    }
 
     //GetMappoing("/upload")
     //uplaod를 호출해주는 것을 넣어준다.
